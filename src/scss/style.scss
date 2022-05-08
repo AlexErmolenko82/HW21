@@ -1,0 +1,25 @@
+$size: 300px;
+
+.container {
+    margin: 3em auto;
+    display: flex;
+    justify-content:space-between;
+ 
+}
+
+.box{
+    padding: 3em;
+    width: $size;
+    height: $size;
+    border: 1px solid black;
+}
+
+.figure {
+    width: $size;
+    height: $size;
+    background-color: black;
+}
+
+p {
+    background-image: url('/images/space.jpg');
+  }
