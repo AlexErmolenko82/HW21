@@ -1,3 +1,6 @@
 node_modules/
 dist/
 .vscode
+src/images/
+src/js/*.min.js
+src/css/
