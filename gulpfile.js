@@ -20,7 +20,7 @@ function browsersync() {
 function scripts() {
     // gulp.pipe
     return gulp
-      .src(["node_modules/jquery/dist/jquery.min.js", "src/js/script.js"])
+      .src(["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", "node_modules/jquery/dist/jquery.min.js", "src/js/script.js"])
       .pipe(concat("script.min.js"))
       .pipe(uglify())
       .pipe(gulp.dest("src/js"))
@@ -29,7 +29,7 @@ function scripts() {
   
   function styles() {
     return gulp
-      .src("src/scss/*.scss")
+      .src(["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/scss/*.scss"])
       .pipe(sass())
       .pipe(concat("styles.min.css"))
       .pipe(autoprefixer({ grid: true }))
